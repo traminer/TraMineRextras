@@ -1,4 +1,4 @@
-                CHANGES IN TraMineRextras VERSION 0.7.10 [2026-10-26]
+                CHANGES IN TraMineRextras VERSION 0.7.10 [2026-11-12]
                 
 Misc.:
     o   Development version on Github.
@@ -7,7 +7,7 @@ Misc.:
                 CHANGES IN TraMineRextras VERSION 0.6.9 [2026-06-20]
                 
 Changes in existing functions:
-    o   seqCompare() and dissCompare() gains logical argument 
+    o   `seqCompare()` and `dissCompare()` gains logical argument 
         inc.df to control whether the degrees of freedom of the LRT 
         returned should be included in the table. In addition, 
         in case of multiple samples, i.e., when s is not zero but 
@@ -16,22 +16,21 @@ Changes in existing functions:
         LRTs (previously was the average) and its associated 
         chi-square p-value is obtained with the corresponding 
         degrees of freedom.
-    o   seqCompare() and dissCompare(): suppressed report of 
-        computation time. Use system.time() instead.
-    o   seqpolyads(): argument core can now be "auto".
-.
+    o   `seqCompare()` and `dissCompare()`: suppressed report of 
+        computation time. Use `system.time()` instead.
+    o   `seqpolyads()`: argument core can now be `"auto"`.
     
 
                 CHANGES IN TraMineRextras VERSION 0.6.8 [2024-08-17]
                 
 New function:
-    o   dissCompare() comparison of two groups of data represented by 
+    o   `dissCompare()` comparison of two groups of data represented by 
         a pairwise dissimilarity matrix.
         
 Bug fixes
-    o   seqCompare() caused an error when only one group occurs in 
+    o   `seqCompare()` caused an error when only one group occurs in 
         one of the sets. Now returns NA for such sets.
-    o   internal seq.comp() renamed as seqxcomp().
+    o   internal `seq.comp()` renamed as `seqxcomp()`.
     o   missing package anchors for Rd link targets. 
                            
                 
@@ -52,8 +51,7 @@ Bug fixes:
                 CHANGES IN TraMineRextras VERSION 0.6.6 [2023-03-07]
 
 New functions:
-    o   dissindic() case indicators to select observations that are typical, atypical, 
-	    illustrative of or counterexample of a statistical association between trajectories 
+    o   dissindic() case indicators to select observations that are typical, atypical, illustrative of or counterexample of a statistical association between trajectories 
 		and a covariate/typology.
 
 Changes in existing functions:
@@ -162,7 +160,7 @@ Changes in existing functions
 
 Bug fixes
     o   seqgranularity() did not return a proper stslist object
-        when \code{method="mostfreq"}.
+        when method="mostfreq".
 
 
                 CHANGES IN TraMineRextras VERSION 0.4.7 [2020-03-02]
@@ -287,7 +285,7 @@ Bug fixes
     o   seqtabstocc(): label synchronization issue.
 
 Misc
-    o   Uses function \code{TraMineR.check.depr.args()} introduced
+    o   Uses function TraMineR.check.depr.args() introduced
         in TraMineR v 2.0-8. So, depends now on version >= 2.0-8.
 
 
